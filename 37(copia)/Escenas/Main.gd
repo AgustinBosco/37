@@ -59,7 +59,7 @@ func _on_pared_RM3():
 		gameover()
 
 func victoria():
-	print("ganaste pibe")
+	get_tree().change_scene("res://Escenas/Victoria.tscn")
 
 func gameover():
-	print("perdiste pete")
+	get_tree().change_scene("res://Escenas/gameover.tscn")

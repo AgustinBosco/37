@@ -16,7 +16,6 @@ var generador
 
 func _on_timer_aparicion_timeout():
 	generador = int(floor(rand_range(1,5)))
-	print(generador)
 	if generador == 1:
 		punto1.global_position=punto5.global_position
 		AparicionCatch(generador)
