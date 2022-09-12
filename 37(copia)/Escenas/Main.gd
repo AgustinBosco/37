@@ -3,10 +3,11 @@ extends Node
 var puntos = 0
 
 onready var puntaje = $puntaje
+onready var musica = $AudioStreamPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	musica.play()
 
 
 func _on_Jugador_SM1():

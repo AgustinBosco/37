@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Sprites/Linebeam.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Sprites/digital-7.ttf" type="DynamicFontData" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Sprites/HOLA.JPG" type="Texture" id=4]
 [ext_resource path="res://Sprites/fdg.JPG" type="Texture" id=5]
 [ext_resource path="res://Escenas/Tutorial.gd" type="Script" id=6]
+[ext_resource path="res://musica/VHS Tape Glitch Sound.mp3" type="AudioStream" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -77,5 +78,9 @@ texture = ExtResource( 5 )
 position = Vector2( 405.125, 404.5 )
 scale = Vector2( 0.187378, 0.194 )
 texture = ExtResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
